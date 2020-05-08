@@ -1,8 +1,20 @@
+# [
+#     [1, 2, 3, 4, 5],
+#     [12, 7, 2, 9, 1],
+#     [99, 2, 7, 1,]
+# ]
+
+
 def intersection(arrays):
 
-    """
-    YOUR CODE HERE
-    """
+    cache = {}
+
+    for row in range(len(array)):
+        cache[row] = array[row]
+
+
+
+
 
     return result
 

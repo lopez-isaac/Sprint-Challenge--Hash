@@ -1,8 +1,22 @@
 def has_negatives(a):
+    cache = {}
 
-    """
-    YOUR CODE HERE
-    """
+    for num in a:
+        num = abs(num)
+
+        if num not in cache:
+            cache[num] = 1
+        else:
+            cache[num] += 1
+
+
+    key = list(cache.items())
+    result = []
+    for i in key:
+        if i[1] > 1:
+            result.append(i[0])
+        else:
+            continue
 
     return result
 

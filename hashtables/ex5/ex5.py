@@ -1,8 +1,15 @@
 def finder(files, queries):
 
-    """
-    YOUR CODE HERE
-    """
+    cache = {}
+    result = []
+
+    for i in files:
+        cache[i] = i
+
+    for key in cache:
+        filename = cache[key][-3:]
+        if filename in queries:
+            result.append(key)
 
     return result
 
